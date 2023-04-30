@@ -1,6 +1,7 @@
+import Sidebar from '@/components/Sidebar'
 import Head from 'next/head'
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -10,9 +11,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <main className="flex min-h-screen max-w-7xl mx-auto">
 
-      <h1>hello world</h1>
+        {/* SideBar */}
+
+        <Sidebar />
+
+
+        {/* Feed */}
+
+
+        {/* Widgets */}
+
+
+        {/* Modal */}
+
+      </main>
+
 
     </>
   )
 }
+
+
+export default Home;
