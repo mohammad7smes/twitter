@@ -1,8 +1,8 @@
 import Image from "next/image"
 import SidebarMenuItem from "./SidebarMenuItem"
 
-import {HomeIcon,HashtagIcon, DocumentPlusIcon,} from "@heroicons/react/24/solid"
-import {BellIcon,InboxIcon,BookmarkIcon, ClipboardIcon, UserIcon,HomeModernIcon} from "@heroicons/react/24/outline"
+import { HomeIcon, HashtagIcon } from "@heroicons/react/24/solid"
+import { BellIcon, InboxIcon, BookmarkIcon, ClipboardIcon, UserIcon, EllipsisHorizontalCircleIcon, EllipsisHorizontalIcon } from "@heroicons/react/24/outline"
 
 
 export default function Sidebar() {
@@ -26,32 +26,32 @@ export default function Sidebar() {
                     active
                 />
                 <SidebarMenuItem
-                     text="Explore" 
-                     Icon={HashtagIcon} 
-                />
-                <SidebarMenuItem 
-                    text="Notifications" 
-                    Icon={BellIcon} 
+                    text="Explore"
+                    Icon={HashtagIcon}
                 />
                 <SidebarMenuItem
-                     text="Messages" 
-                     Icon={InboxIcon} 
+                    text="Notifications"
+                    Icon={BellIcon}
                 />
                 <SidebarMenuItem
-                     text="Bookmarks" 
-                     Icon={BookmarkIcon} 
+                    text="Messages"
+                    Icon={InboxIcon}
                 />
                 <SidebarMenuItem
-                     text="Lists" 
-                     Icon={ClipboardIcon} 
+                    text="Bookmarks"
+                    Icon={BookmarkIcon}
                 />
                 <SidebarMenuItem
-                     text="Profile" 
-                     Icon={UserIcon} 
+                    text="Lists"
+                    Icon={ClipboardIcon}
                 />
                 <SidebarMenuItem
-                     text="More" 
-                     Icon={DocumentPlusIcon} 
+                    text="Profile"
+                    Icon={UserIcon}
+                />
+                <SidebarMenuItem
+                    text="More"
+                    Icon={EllipsisHorizontalCircleIcon}
                 />
             </div>
 
@@ -62,19 +62,19 @@ export default function Sidebar() {
             {/*---------------- Mini Profile---------------- */}
 
             <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
-               <img 
-                src="/user.jpg"
-                alt="user image"
-                className="w-10 rounded-full xl:mr-2"
+                <img
+                    src="/user.jpg"
+                    alt="user image"
+                    className="w-10 rounded-full xl:mr-2"
                 />
 
-               <div className="flex leading-5 hidden xl:inline">
-                <div>
-                <h4 className="font-bold">Mohammad</h4>
-                <p className="text-gray-500">@moesmilzadeh</p>
-                </div>
-                <p className="text-2xl font-bold xl:ml-8 hidden xl:inline">...</p>
-               </div>
+                {/* <div > */}
+                    <div className="hidden leading-5  xl:inline">
+                        <h4 className="font-bold">Mohammad</h4>
+                        <p className="text-gray-500">@moesmilzadeh</p>
+                    </div>
+                    <EllipsisHorizontalIcon className="xl:ml-8 hidden xl:inline" />
+                {/* </div> */}
             </div>
         </div >
     )
