@@ -1,5 +1,6 @@
 import Feed from '@/components/Feed';
 import Sidebar from '@/components/Sidebar'
+import Widgets from '@/components/Widgets';
 import Head from 'next/head'
 
 const Home = () => {
@@ -25,6 +26,8 @@ const Home = () => {
 
 
         {/*------------------- Widgets -------------------*/}
+
+        <Widgets />
 
 
         {/*------------------- Modal -------------------*/}
